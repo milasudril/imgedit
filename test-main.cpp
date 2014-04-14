@@ -1,22 +1,20 @@
-#ifdef __WAND_IGNORE__
+#ifdef __WAND__
 
 target[
 	name[
-		Test.exe
+		imgedit-test.exe
 	]
 	type[
 		application
 	]
 	platform[
-		win32
+		;Windows
 	]
 ]
-#endif
-#ifdef __WAND_IGNORE__
 
 target[
 	name[
-		Gui
+		imgedit-test
 	]
 	type[
 		application
@@ -27,7 +25,7 @@ target[
 
 #include "test.h"
 
-#include <herbs/maindefault.h>
+#include <herbs/maindefault/maindefault.h>
 
 Herbs::Application* Herbs::Application::instanceCreate()
 	{

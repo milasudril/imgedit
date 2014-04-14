@@ -1,5 +1,5 @@
 #ifdef __WAND__
-dependencies[imgedit.o]
+dependency[imgedit.o]
 target[name[imgedit.h] type[include]]
 #endif
 
@@ -23,7 +23,7 @@ class ImgEdit:public Gui::ViewSplit
 			,uint32_t style_1,Gui::Window* parent)
 			{return new ImgEdit(gui_obj,style_0,style_1,parent);}
 		
-		void imageSet(Herbs::MatrixStorage<Gui::Blitter::PixelBGRA<float> >& img)
+		void imageSet(Vector::MatrixStorage<Gui::Blitter::PixelBGRA<float> >& img)
 			{image_view->pixelsSet(img);}
 
 	protected:

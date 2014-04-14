@@ -1,4 +1,4 @@
-#ifdef __WAND_IGNORE__
+#ifdef __WAND__
 
 target[
 	name[
@@ -13,8 +13,8 @@ target[
 #include "imgedit.h"
 #include "test.h"
 #include <gui/toolbar.h>
-#include <herbs/intformat.h>
-#include <herbs/string.h>
+#include <herbs/intformat/intformat.h>
+#include <herbs/string/string.h>
 
 class MyImgEdit:public ImgEdit
 	{
@@ -49,7 +49,7 @@ class MyImgEdit:public ImgEdit
 
 namespace
 	{
-	void fill(Herbs::MatrixStorage<Gui::Blitter::PixelBGRA<float> >& img)
+	void fill(Vector::MatrixStorage<Gui::Blitter::PixelBGRA<float> >& img)
 		{
 		for(size_t k=0;k<img.nRowsGet();++k)
 			{

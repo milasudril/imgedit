@@ -1,6 +1,6 @@
-#ifdef __WAND_IGNORE__
+#ifdef __WAND__
 
-dependencies[
+dependency[
 	test.o
 ]
 target[
@@ -37,7 +37,7 @@ class Test:public Gui::Gui
 		~Test();
 
 	private:
-		Herbs::MatrixStorage< ::Gui::Blitter::PixelBGRA<float> > image;
+		Vector::MatrixStorage< ::Gui::Blitter::PixelBGRA<float> > image;
 		MyImgEdit* mainwin;
 	};
 
